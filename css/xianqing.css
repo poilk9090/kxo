@@ -1,0 +1,908 @@
+html,body,ol,ul,li,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,img,time,span,section,article,aside,header,footer,nav,figure,div{margin:0;padding:0;}
+body{
+    font-size:16px;
+    font-family: '微软雅黑';
+}
+ul,ol,li{
+    list-style:none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size:16px;
+    font-weight: normal;
+}
+b,strong{
+    font-weight: normal;
+}
+i,em{
+    font-style: normal;
+}
+a,u{
+    text-decoration: none;
+}
+img{
+    border:0;
+    display:block;
+}
+input,fieldset{
+    outline: none;
+    border:0;
+}
+.clearfix:after{
+    content:'.';
+    clear:both;
+    height:0;
+    overflow:hidden;
+    display:block;
+    visibility: hidden;
+}
+
+/* 开始 */
+.top{
+    height: 42px;
+    background: #000;
+}
+.topcon{
+    width: 1270px;
+    height: 42px;
+    background: #000;
+    margin: 0 auto;
+}
+.topcon .img1{
+    float: left;
+    margin: 10px 5px;
+}
+.topcon ul li{
+    width: 96px;
+    float: left;
+    height: 42px;
+    line-height: 42px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+.topcon .denglu{
+    width: 303px;
+    height: 42px;
+    float:right;
+    text-align: center;
+    line-height: 42px;
+}
+.topcon .denglu ol li{
+    float: left;
+    width: 66px;
+    height: 42px;
+}
+.topcon .denglu ol li img{
+    float: left;
+    margin-top: 15px;
+}
+.topcon .denglu ol li a,.topcon .denglu ol li span{
+    color: #fff;
+    font-size: 12px;
+}
+/* 顶部结束 */
+
+/* logo 导航 开始 */
+
+.logo{
+    height: 70px;
+    background: #fff;
+}
+.logocon{
+    width: 1270px;
+    height: 70px;
+    margin: 0 auto;
+    background: #fff;
+    position: relative;
+}
+.logocon img{
+    margin: 18px 34px 0 0 ;
+    float: left;
+}
+.logocon ol{
+    width: 750px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 70px;
+    /* box-sizing: border-box; */
+}
+.logocon ol li a{
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+}
+.logocon ol li:hover{
+    border-bottom: 2px solid #000;
+}
+.logocon .sousuo{
+    width: 240px;
+    height: 30px;
+    background: #fff;
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    
+}
+.logocon .sousuo input[type=text]{
+    width: 180px;
+    height: 33px;
+    border: 1px solid #ddd;
+    border-radius: 25px 0 0 25px;
+    border-right: none;
+    float: left;
+    padding-left: 13px;
+    box-sizing: border-box;
+}
+.logocon .sousuo input[type=submit]{
+    width: 28px;
+    height: 33px;
+    border: 1px solid #ddd;
+    border-radius: 0 25px 25px 0;
+    border-left: none;
+    float: left;
+    background: #fff url(../img/day_14.gif) no-repeat center;
+}
+
+/* 隐藏菜单 */
+
+.lis-1 .hide-1{
+    width: 100%;
+    height: 480px;
+    background: #fff;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 88;
+    display: none;
+    box-sizing: border-box;
+}
+.lis-1:hover .hide-1{
+    display: block;
+    justify-content: space-between;
+    display: flex;
+    border-top: 1px solid #d9d9d9;
+    box-shadow: 5px 5px 5px #d9d9d9;
+}
+.lis-1 .hide-1 dl dd:hover{
+    color: darkblue;
+}
+.lis-1 .hide-1 dl,.lis-2 .hide-2 dl,.lis-3 .hide-3 dl,.lis-4 .hide-4 dl,.lis-5 .hide-5 dl,.lis-6 .hide-6 dl{
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+}
+.lis-1 .hide-1 dl em,.lis-2 .hide-2 dl em,.lis-3 .hide-3 dl em,.lis-4 .hide-4 dl em,.lis-5 .hide-5 dl em,.lis-6 .hide-6 dl em{
+    float: left;
+}
+.lis-1 .hide-1 dl em i,.lis-2 .hide-2 dl em i,.lis-3 .hide-3 dl em i,.lis-4 .hide-4 dl em i,.lis-5 .hide-5 dl em i,.lis-6 .hide-6 dl em i{
+    border-bottom: 2px solid #000;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+}
+.lis-1 .hide-1 dl dt,.lis-2 .hide-2 dl dt,.lis-3 .hide-3 dl dt,.lis-4 .hide-4 dl dt,.lis-5 .hide-5 dl dt,.lis-6 .hide-6 dl dt{
+    width: 140px;
+    height: 125px;
+    margin-right: 10px;
+    /* float: left; */
+}
+.lis-1 .hide-1 dl dd,.lis-3 .hide-3 dl dd,.lis-4 .hide-4 dl dd,.lis-5 .hide-5 dl dd{
+    line-height: 29px;
+    color: #989696;
+    font-size: 12px;
+    text-align: left;
+}
+.lis-2 .hide-2{
+    width: 100%;
+    height: 235px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 88;
+    display: none;
+    box-sizing: border-box;
+    background: #fff;
+}
+.lis-2:hover .hide-2{
+    display: block;
+    border-top: 1px solid #d9d9d9;
+    box-shadow: 5px 5px 5px #d9d9d9;
+}
+.lis-3 .hide-3{
+    width: 100%;
+    height: 470px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 88;
+    display: none;
+    background: #fff;
+}
+.lis-3 .hide-3 .NEW{
+    background: #e73349;
+    color:#fff;
+    float: right;
+    width: 32px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 14px;
+    height: 14px;
+    margin: 7px;
+}
+.lis-3:hover .hide-3{
+    display: block;
+    border-top: 1px solid #d9d9d9;
+    justify-content: space-between;
+    display: flex;
+    box-shadow: 5px 5px 5px #d9d9d9;
+}
+.lis-4 .hide-4{
+    width: 100%;
+    height: 267px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 88;
+    background: #fff;
+    display: none;
+}
+.lis-4:hover .hide-4{
+    display: block;
+    border-top: 1px solid #d9d9d9;
+    justify-content: space-between;
+    display: flex;
+    box-shadow: 5px 5px 5px #d9d9d9;
+}
+.lis-5 .hide-5{
+    width: 100%;
+    height: 468px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 88;
+    background: #fff;
+    display: none;
+}
+.lis-5:hover .hide-5{
+    display: block;
+    border-top: 1px solid #d9d9d9;
+    justify-content: space-between;
+    display: flex;
+    box-shadow: 5px 5px 5px #d9d9d9;
+}
+.lis-6 .hide-6{
+    width: 100%;
+    height: 240px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 88;
+    background: #fff;
+    display: none;
+}
+.lis-6:hover .hide-6{
+    display: block;
+    border-top: 1px solid #d9d9d9;
+    /* justify-content: space-between; */
+    display: flex;
+    box-shadow: 5px 5px 5px #d9d9d9;
+}
+.lis-7 .hide-7{
+    width: 210px;
+    height: 200px;
+    position: absolute;
+    top: 70px;
+    left: 836PX;
+    display: none;
+    z-index: 88;
+    text-align: center;
+    background: #fff;
+}
+.lis-7 .hide-7 ul li{
+    width: 210px;
+    height: 50px;
+    line-height: 50px;
+    border: none;
+}
+.lis-7 .hide-7 ul li a{
+    float: left;
+}
+.lis-7 .hide-7 ul li a:hover{
+    color: blue;
+}
+.lis-7:hover .hide-7{
+    display: block;
+    border-top: 1px solid #d9d9d9;
+    box-shadow: 5px 5px 5px #d9d9d9;
+}
+
+/* logo导航  end */
+
+/* 路径详情  */
+
+.path{
+    height: 75px;
+    background: #fff;
+}
+.pathcon{
+    width: 1270px;
+    height: 75px;
+    background: #fff;
+    margin: 0 auto;
+    /* text-align: center; */
+}
+.pathcon ol{
+    margin: 26px 0 0 135px;
+}
+.pathcon ol li img{
+    display: inline-block;
+}
+.pathcon ol li{
+    float: left;
+    margin: 0 8px;
+}
+.pathcon ol li a{
+    font-size: 14px;
+    color: #000;
+}
+
+/* 放大镜 */
+
+.glass{
+    height: 584px;
+    background: #fff;
+}
+.glasscon{
+    width: 1270px;
+    height: 584px;
+    background: #fff;
+    margin: 0 auto;
+}
+.glasscon .leftgls{
+    width: 450px;
+    height: 584px;
+    background: #fff;
+    margin-left: 85px;
+    float: left;
+}
+.glasscon .leftgls .mapbox{
+    width: 450px;
+    height: 450px;
+    position: relative;
+}
+.glasscon .leftgls .zhezao{
+    width: 225px;
+    height: 225px;
+    background: #fff;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.glasscon .rightgls{
+    width: 450px;
+    height: 450px;
+    background: #fff;
+    position: absolute;
+    left: 580px;
+    top: 212px;
+    display: none;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    z-index: 99;
+}
+.glasscon .rightgls img{
+    position: absolute;
+    width: 900px;
+    height: 900px;
+}
+.glasscon .xuan{
+    width: 450px;
+    height: 70px;
+    background: #fff;
+    margin-top: 24px;
+}
+.glasscon .xuan .a1{
+    width: 34px;
+    height: 68px;
+    display: block;
+    text-align: center;
+    line-height: 60px;
+    float: left;
+    font-size: 50px;
+    font-weight: bold;
+    color: #ddd;
+    border: #ddd solid 1px;
+}
+.glasscon .xuan .a2{
+    width: 32px;
+    height: 68px;
+    display: block;
+    text-align: center;
+    line-height: 60px;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+    color: #ddd;
+    border: #ddd solid 1px;
+}
+.glasscon .xuan img{
+    width: 68px;
+    height: 68px;
+    border: 1px solid #ddd;
+    float: left;
+    margin:0 3px;
+}
+.glasscon .xuan .img1{
+    border: brown solid 1px;
+}
+.righttext{
+    width: 720px;
+    height: 450px;
+    background: #fff;
+    float: right;
+}
+.righttext .texttop{
+    width: 720px;
+    height: 127px;
+    background: #fff;
+}
+.righttext .texttop h3,.righttext .texttop h4{
+    font-size: 14px;
+    line-height: 35px;
+    text-indent: 16px;
+}
+.price{
+    width: 575px;
+    height: 100px;
+    background: #f6f6f6;
+    position: relative;
+}
+.price h3{
+    color: #af8e8e;
+    font-size: 12px;
+    line-height: 40px;
+    text-indent: 20px;
+    /* float: left; */
+}
+.price h3 span{
+    color: #c5311d;
+    font-size: 22px;
+    font-weight: bold;
+}
+.price .star{
+    float:right;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.price .star ol li{
+    float: left;
+    font-size: 12px;
+    color: #ccc;
+}
+.price .star ol li i{
+    margin: 0 10px;
+    font-size: 20px;
+    color: #000;
+    display: inline-block;
+    cursor: pointer;
+}
+.amount{
+    width: 575px;
+    height: 100px;
+    /* line-height: 70px; */
+}
+.amount h3{
+    /* float: left; */
+    font-size: 14px;
+    color: #ccc;
+    margin: 40px 20px 0 10px;
+    float: left;
+    text-indent: 10px;
+}
+.amount .button{
+    float: left;
+}
+.amount input[type=text]{
+    width: 30px;
+    height: 20px; 
+    text-align: center;
+    float: left;
+    margin-top: 40px;
+}
+
+.amount span{
+    display:block;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    background: #eee;
+    margin: 40px 10px;
+    float: left;
+    line-height: 20px;
+    cursor: pointer;
+}
+.gouwuce{
+    width: 575px;
+    height: 70px;
+    background: #fff;
+}
+.gouwuce ul{
+    margin-left: 15px;
+}
+.gouwuce ul li{
+    width: 144px;
+    height: 45px;
+    background: #000;
+    color: #fff;
+    float: left;
+    text-align: center;
+    line-height: 45px;
+    border-right: 1px solid #fff;
+    margin: 15px 0;
+    cursor: pointer;
+}
+.gouwuce ul li a{
+    color: #fff;
+}
+.gouwuce ul li:hover{
+    background: #c11d1d;
+}
+
+/* 放大镜 end */
+
+/* 详情页 */
+
+.detalis{
+    height: 6519px;
+    background: #fff;
+}
+.detalis .detaliscon{
+    width: 1270px;
+    height: 6519px;
+    background: #fff;
+    margin: 0 auto;
+}
+.detalis .detaliscon .caption{
+    width: 790px;
+    height: 46px;
+    background: #000;
+    float: right;
+}
+.detalis .detaliscon .caption ol{
+    display: flex;
+    justify-content: center;
+}
+.detalis .detaliscon .caption ol li{
+    width: 317px;
+    height: 46px;
+    color: #fff;
+    text-align: center;
+    line-height: 46px;
+}
+.detalis .detaliscon .caption ol li:hover{
+    background: crimson;
+}
+.imgcon{
+    float: right;
+}
+.imgcon dl dt{
+    width: 790px;
+    float: right;
+    height: 170px;
+    background: #000;
+}
+.imgcon dl dt img{
+    width: 100%;
+    height: 120px;
+}
+.imgcon dl dt p{
+    color: #fff;
+    font-size: 18px;
+    line-height: 20px;
+    text-indent: 18px;
+}
+.imgcon dl dd{
+    width: 100%;
+}
+
+.ferton{
+    height: 74px;
+    background: #333;   
+}
+.fertcon{
+    width: 1270px;
+    height: 74px;
+    margin: 0 auto;
+}
+.fertcon ol{
+    display: flex;
+    justify-content: space-between;
+}
+.fertcon ol li{
+    float: left;
+    width: 255px;
+    height: 74px;
+    text-align: center;
+    line-height: 74px;
+}
+.fertcon ol li span{
+    color: #fff;
+    font-size: 14px;
+}
+.fertcon ol li img{
+    display: inline-block;
+    margin-right: 18px;
+}
+
+
+/* 底部开始 */
+
+.help{
+    height: 329px;
+    background: #000;
+    border-bottom: 1px solid #1a1a1a;
+}
+.helpcon{
+    width: 1270px;
+    height: 329px;
+    background: #000;
+    margin: 0 auto;
+}
+.helpcon .helpleft{
+    width: 677px;
+    height: 329px;
+    float: left;
+}
+
+.helpcon .helpleft p{
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    width: 677px;
+    height: 97px;
+    line-height: 97px;
+    /* float: left; */
+}
+.helpcon .helpleft .lis{
+    width: 677px;
+    height: 232px;
+    display: flex;
+    border-right: 1px solid #1a1a1a;
+    justify-content: space-between;
+}
+.helpcon .helpleft dl{
+    width: 130px;
+    height: 232px;
+    float: left;
+    line-height: 24px;
+    color: #fff;
+    font-size: 12px;
+}
+.helpcon .helpleft dl dt:nth-child(1){
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.helpcon .helpleft dl dd:nth-child(4){
+    font-weight: bold;
+    margin: 5px 0;
+}
+.helpcon .helpleft ol{
+    width: 130px;
+    height: 232px;
+    float: left;
+    line-height: 24px;
+    color: #fff;
+    font-size: 12px;
+}
+.helpcon .helpleft ol li:nth-child(1){
+    font-size: 14px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+.blogroll{
+    width: 408px;
+    height: 329px;
+    float: left;
+    padding-left: 74px;
+    box-sizing: border-box;
+}
+.blogroll h3{
+    width: 408px;
+    height: 97px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 97px;
+    float: left;
+}
+.blogroll ol li{
+    font-size: 12px;
+    color: #fff;
+    line-height: 24px;
+}
+.blogroll ol{
+    width: 166px;
+    height: 232px;
+    float: left;
+}
+.blogroll ol:nth-child(3){
+    border-right: 1px solid #1a1a1a;
+}
+.CLUE{
+    width: 180px;
+    height: 329px;
+    float: left;
+    text-align: center;
+}
+.CLUE h2{
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    width: 180px;
+    height: 97px;
+    text-align: center;
+    line-height: 97px;
+    float: left;
+}
+.CLUE ul li{
+    color: #fff;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+/* 资讯底部 */
+
+.message{
+    height: 138px;
+    background: #000;
+}
+.message .messcon{
+    width: 1270px;
+    height: 138px;
+    background: #000;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.message .messcon .mesbox{
+    width: 1270px;
+    height: 85px;
+    background: #000;
+    margin-top: 34px;
+}
+.message .messcon .mesbox .mes-1{
+    width: 368px;
+    height: 85px;
+    border-right: 1px solid #1a1a1a;
+    float: left;
+}
+.mesbox .mes-1 img{
+    float: left;
+    margin-top: 16px;
+}
+.mesbox .mes-1 ol{
+    float: left;
+}
+.mesbox .mes-1 ol li{
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #fff;
+    margin:0 22px;
+    font-style: italic;
+}
+.mesbox .mes-1 ol li:nth-child(1){
+    margin-top: 14px;
+    font-style: normal;
+}
+.mesbox .mes-1 ul{
+    float: left;
+}
+.mesbox .mes-1 ul li{
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #fff;
+}
+.mesbox .mes-1 ul li:nth-child(1){
+    margin-top: 14px;
+}
+.message .messcon .mesbox .mes-2{
+    width: 356px;
+    height: 85px;
+    float: left;
+    border-right: 1px solid #1a1a11;
+}
+.mesbox .mes-2 img{
+    margin:16px 20px 0 40px;
+    float: left;
+}
+.mesbox .mes-2 h2{
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 60px;
+    margin-right: 14px;
+}
+.mesbox .mes-2 ul{
+    float: left;
+    margin-top: 20px;
+    text-align: center;
+}
+.mesbox .mes-2 ul li{
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #fff;
+}
+.mesbox .mes-3{
+    width: 226px;
+    height: 85px;
+    float: left;
+    border-right:1px solid #1a1a1a;
+}
+.mesbox .mes-3 img{
+    float: left;
+    margin-left: 42px;
+    height: 85px;
+}
+.mesbox .mes-3 ul{
+    margin-top: 24px;
+}
+.mesbox .mes-3 ul li{
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+}
+.mesbox .mes-4{
+    width: 270px;
+    height: 85px;
+    float: left;
+}
+.mesbox .mes-4 img{
+    height: 85px;
+    margin: 0 15px 0 33px;
+    float: left;
+}
+.mesbox .mes-4 ul{
+    margin-top: 20px;
+}
+.mesbox .mes-4 ul li{
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #fff;
+}
+.ICP{
+    height: 72px;
+    background: #000;
+}
+.ICPcon{
+    width: 1270px;
+    height: 72px;
+    margin: 0 auto;
+    background: #000;
+    border-top: 1px solid #1a1a1a;
+    line-height: 72px;
+}
+.ICPcon p{
+    color: #fff;
+    font-size: 14px;
+    float: left;
+}
+.ICPcon img{
+    float: left;
+    margin: 20px 0 0 10px;
+}
+.ICPcon a{
+    float: right;
+    color: #fff;
+    font-size: 14px;
+}
+
+

@@ -1,0 +1,297 @@
+html,body,ol,ul,li,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,img,time,span,section,article,aside,header,footer,nav,figure,div{margin:0;padding:0;}
+body{
+    font-size:16px;
+    font-family: '微软雅黑';
+}
+ul,ol,li{
+    list-style:none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size:16px;
+    font-weight: normal;
+}
+b,strong{
+    font-weight: normal;
+}
+i,em{
+    font-style: normal;
+}
+a,u{
+    text-decoration: none;
+}
+img{
+    border:0;
+    display:block;
+}
+input,fieldset{
+    outline: none;
+    border:0;
+}
+.clearfix:after{
+    content:'.';
+    clear:both;
+    height:0;
+    overflow:hidden;
+    display:block;
+    visibility: hidden;
+}
+
+/* 开始 */
+.top{
+    height: 106px;
+    background: #ffffff;
+}
+.top .topcon{
+    width: 1252px;
+    height: 106px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+.top .topcon img{
+    margin: 15px 0 0 0;
+    width: 160px;
+}
+
+/* 海报 */
+
+.haibao{
+    background: url(../img/denhlu.png) no-repeat;
+    height: 600px;
+}
+.denglubox{
+    width: 422px;
+    height: 440px;
+    background: #f9f9f9;
+    float: right;
+    margin-top: 82px;
+}
+.denglubox .box1{
+    width: 410px;
+    height: 415px;
+    background:#f9f9f9;
+    float: right;
+    margin: 8px 0 0 13px;
+}
+.denglubox .box1 .minbox{
+    width: 410px;
+    height: 43px;
+    background: #f9f9f9;
+    margin-top: 25px;
+    text-align: center;
+    line-height: 43px;
+    margin-bottom: 28px;
+}
+.denglubox .box1 .minbox a{
+    color: #000;
+    font-size:26px;
+    border-right:1px solid #595757;
+    padding-right: 32px;
+    margin-left: 38px;
+}
+.denglubox .box1 .minbox a:nth-child(2){
+    border: none;
+}
+.denglubox .box1 .minbox .a1{
+    color:#005bab;
+}
+.denglubox .f1{
+    width: 410px;
+    height: 205px;
+    display: block;
+}
+.denglubox form{
+    /* width: 410px;
+    height: 205px; */
+    display: none;
+}
+.denglubox .f1 input[name=urse]{
+    border-radius: 25px;
+    width: 400px;
+    height: 45px;
+    border: #e6e6e6 1px solid ;
+    color: #000;
+    font-size: 16px;
+    background: url(../img/denglu_03.jpg) no-repeat 22px 8px #fff;
+    padding-left: 60px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+}
+.denglubox .f1 #urse-error{
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    top: 350px;
+    right: 215px;
+}
+.denglubox .f1 #pass-error{
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    top: 408px;
+    right: 202px;
+}
+.denglubox .f1 p, .denglubox #fn2 p{
+    color: rgba(187, 119, 31, 0.801);
+    font-size: 12px;
+    margin: 5px 0 5px 24px;
+}
+.denglubox #fn2 input[name=pass]{
+    width: 210px;
+    height: 45px;
+    border:1px solid #e6e6e6;
+    border-radius: 25px;
+    float: left;
+    padding-left: 60px;
+    box-sizing: border-box;
+    background: url(../img/denglu_07.jpg) no-repeat 22px 8px #fff;
+}
+.denglubox #fn2 button{
+    width: 145px;
+    height: 45px;
+    background: #575757;
+    border-radius: 25px;
+    border: none;
+    margin-left: 16px;
+    color: #fff;
+    cursor:no-drop
+}
+.denglubox #fn2 input[type=submit]{
+    width: 400px;
+    height: 45px;
+    border: #e6e6e6 1px solid;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 25px;
+    background: #575757;
+    border: none;
+    margin-top: 17px;
+    letter-spacing: 30px;
+    text-indent: 30px
+}
+.denglubox .f1 .T1,.denglubox .f2 .T1{
+    font-size: 12px;
+    float: left;
+    color: #000;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.denglubox .f1 .T2,.denglubox .f2 .T2{
+    font-size: 12px;
+    float: right;
+    color: #000;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.denglubox .f1 input[type=text]{
+    border-radius: 25px;
+    width: 300px;
+    height: 45px;
+    border: #e6e6e6 1px solid ;
+    color: #000;
+    font-size: 14px;
+    background: url(../img/denglu_03.jpg) no-repeat 22px 8px #fff;
+    padding-left: 60px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+}
+.denglubox .f1 input[type=password]{
+    border-radius: 25px;
+    width: 300px;
+    height: 45px;
+    border: #e6e6e6 1px solid;
+    color: #000;
+    font-size: 14px;
+    background: url(../img/denglu_03.jpg) no-repeat 22px 8px #fff;
+    padding-left: 60px;
+    box-sizing: border-box;
+}
+.denglubox .f1 input[type=submit]{
+    width: 400px;
+    height: 45px;
+    border: #e6e6e6 1px solid;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 25px;
+    background: #575757;
+    border: none;
+    margin-top: 17px;
+    letter-spacing: 30px;
+    text-indent: 30px;
+}
+.denglubox #fn2 label:nth-child(0){
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    top: 350px;
+    right: 215px;
+}
+.denglubox #fn2 #pass-error{
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    top: 408px;
+    right: 202px;
+}
+.denglubox .box1 .other{
+    width: 300px;
+    height: 100px;
+    background: #f9f9f9;
+    float: left;
+    text-align: center;
+    margin-top: 32px;
+}
+.denglubox .box1 .other span{
+    font-size: 14px;
+}
+.denglubox .box1 .other li{
+    display: inline-block;
+    margin-top: 20px;
+}
+.denglubox .box1 .other li img{
+    margin: 0 5px;
+}
+/* 登录框  end */
+
+.botton{
+    height: 130px;
+    background: #fff;
+}
+.botton .btncon{
+    width: 1252px;
+    height: 130px;
+    background: #fff;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.botton .btncon .btnbox{
+    width: 1252px;
+    height: 90px;
+    background: #fff;
+    text-align: center;
+    overflow: hidden;
+    padding: 40px 0 0 0;
+    box-sizing: border-box;
+}
+.botton .btncon .btnbox p a,.botton .btncon .btnbox p span{
+    font-size: 14px;
+    color: #595757;
+}
+.botton .btncon .btnbox .wire{
+    width: 1px;
+    height: 13px;
+    display: inline-block;
+    background: #000;
+    margin: 0 10px;
+}
+.botton .btncon .btnbox p i,.botton .btncon .btnbox p u{
+    display: inline-block;
+    margin-right: 5px;
+}
+.botton .btncon .records{
+    color: #595757;
+    font-size: 14px;
+    margin: 10px 0;
+}
+.botton .btncon .records i{
+    margin: 0 10px;
+}
