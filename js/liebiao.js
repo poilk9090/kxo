@@ -61,7 +61,7 @@ function show1(){
         for(var i=0; i<8; i++){
           var $li=$(`
           <li>
-              <img src="${dt[i].img}">
+              <img src="${dt[i].img}>
               <p>${dt[i].name}</p>
               <div class="manner">￥<span>${dt[i].money}</span>立即购买</div>
           </li>`)

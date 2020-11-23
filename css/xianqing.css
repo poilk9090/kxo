@@ -371,6 +371,10 @@ input,fieldset{
     height: 450px;
     position: relative;
 }
+.glasscon .leftgls .mapbox img{
+    width: 450px;
+    height: 450px;
+}
 .glasscon .leftgls .zhezao{
     width: 225px;
     height: 225px;

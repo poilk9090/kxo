@@ -4,11 +4,11 @@ header('content-type:text/html:charset=utf-8');
 //获取传递的参数
 $id=$_GET['id'];
 //连接数据库
-$link=mysqli_connect('localhost','root','','bba');
+$link=mysqli_connect('localhost','root','root','urse');
 //设置编码
 mysqli_set_charset($link,'utf8');
 //执行sql语句
-$sql="select * from bb where id=$id";
+$sql="select * from xiangmu where id=$id";
 //执行sql
 $result=mysqli_query($link,$sql);
 //获取结果集中的数据

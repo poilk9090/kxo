@@ -83,21 +83,24 @@ frm.onsubmit=function(){
     //获取表单输入框的内容
     var u1=document.querySelector("[name='urse']").value
     var p1=document.querySelector("[name='pass']").value
+    // 设置保存时间差
+    var d = new Date()
     //调用ajax对象
     ajax({
-        url:'../php/denglu.php',
-        data:`ursename=${u1}&password=${p1}`,
+        url:'../php/urse.php',
+        data:`urse=${u1}&pass=${p1}`,
         success:function(dt1){
             
             //判断登录是否成功
             if(dt1==1){
                 //保存登录账号
-                setCookie('login',u1,1200)
+                setCookie('login',u1,1800)
                 //获取地址栏中的参数
                 var search1=location.search
+                // console.log(search1);
                 //判断该参数是否存在
                 if(search1){
-                    // console.log(search1)
+                    
                     //获取参数值
                     var path1=search1.split('=')[1]
                     //直接将获取的参数值作为跳转地址

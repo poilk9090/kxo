@@ -96,8 +96,9 @@ var data
 var ids = location.search
 //判断地址栏中是否有参数
 if(ids){
-    //获取id值
+    //获取id值  并截取 = 号 
     var mm = ids.split('=')[1]
+    
     //使用ajax请求，并获取响应结果
     ajax({
         url:'../php/xiangqing.php',
@@ -110,30 +111,30 @@ if(ids){
             `
                 <div class="leftgls">
                     <div class="mapbox">
-                        <img src="${data.lankuan_1}" alt="">
+                        <img src="${data.img}" alt="">
                         <div class="zhezao"></div>
                     </div>
                     <div class="xuan">
                         <a href="javascript:;" class="a1"><</a>
-                        <img src="${data.lankuan_1}" alt="" class="img1">
-                        <img src="${data.lankuan_2}" alt="">
-                        <img src="${data.lankuan_3}" alt="">
-                        <img src="${data.lankuan_4}" alt="">
-                        <img src="${data.lankuan_5}" alt="">
+                        <img src="${data.min_1}" alt="" class="img1">
+                        <img src="${data.min_2}" alt="">
+                        <img src="${data.min_3}" alt="">
+                        <img src="${data.min_4}" alt="">
+                        <img src="${data.min_5}" alt="">
                         <a href="javascript:;" class="a2">></a>
                     </div>
                 </div>
                 <div class="rightgls">
-                    <img src="${data.lankuan_1}" alt="">
+                    <img src="${data.img}" alt="">
                 </div>
 
                 <div class="righttext panel">
                     <div class="texttop">
                         <h3>卡西欧手表 G-SHOCK</h3>
-                        <h4>${data.text}</h4>
+                        <h4>${data.name}</h4>
                     </div>
                     <div class="price">
-                        <h3>销售价： <span>￥ ${data.money}</span></h3>
+                        <h3>销售价： <span>￥${data.money}</span></h3>
                         <h3>购物积分 <i>${data.money}</i></h3>
                         <div class="star">
                             <ol>
