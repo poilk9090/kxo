@@ -11,13 +11,13 @@ showCart()
 function showCart(){
     //获取localstrong中的cartList2对应的数据
     cartList2=localStorage.getItem('cartList2')
+    
     //判断cookie是否存在
-    if(name1){
+    // if(name1){
         //判断该内容是否存在
         if(cartList2){
             //将caetList2中的数据转为json对象
             cartList2=JSON.parse(cartList2)
-
 
             //判断全选框是否被选中
             var quan=cartList2.every(item=>{
@@ -76,13 +76,13 @@ function showCart(){
                             <div class="wp-2">
                                 <ul>
                                     <li class="uls-1">
-                                        ${item.text}
+                                        ${item.name}
                                     </li>
                                     <li class="uls-2">￥<span>${item.money}</span></li>
                                     <li class="uls-3">
                                         <div class="text">
                                             <button type="button" data-id=${item.id}>-</button>
-                                            <button type="text" name="urse" value="${item.number}">${item.number}</button>
+                                            <button type="text" name="urse" value="${item.money}">${item.number}</button>
                                             <button type="button" data-id=${item.id}>+</button>
                                         </div>
                                     </li>
@@ -90,7 +90,7 @@ function showCart(){
                                     <li class="uls-5" data-id=${item.id}>删除</li>
                                 </ul>
                             </div>
-                        </div>
+                        </div>.
                     </div>
 
                 `
@@ -145,121 +145,130 @@ function showCart(){
 
         }
 
-    }else{
-        alert('你还未登录账号，请重新登录')
-        //跳转到登录页面
-        location.href='../html/denglu.html?patUrl='+href1
-    }
+    // }else{
+        // alert('你还未登录账号，请重新登录')
+        // //跳转到登录页面
+        // location.href='../html/denglu.html?patUrl='+href1
+    // }
 }
 
 //给父级对象绑定点击事件
-div1.onclick=function(e){
-    var e = e || window.event
-    var target=e.target || e.srcElement
-    //加法
-    if(target.innerHTML=='+'){
-        
-        //获取当亲对象中data-id
-        var id1=target.getAttribute('data-id')
+window.onload = function(){
+    var text = document.querySelector('.text')
+    var textval = text.children[1]
+    
 
-        var val=parseInt(target.previousElementSibling.value)
-        
-        //遍历数组
-        cartList2.forEach(item=>{
-            if(item.id==id1){
-                item.number=item.number-0+1
-            }
-        })
-        localStorage.setItem('cartList2',JSON.stringify(cartList2))
-        showCart()
-    }
-    //减法
-    if(target.innerHTML=='-'){
-        //获取当亲对象中data-id
-        var id2=target.getAttribute('data-id')
-        var val=parseInt(target.nextElementSibling.value)
-
-        //遍历当前数组
-        cartList2.forEach(item=>{
-            if(item.id==id2 && val>1){
-                item.number=item.number-1
-            }
-        })
-        localStorage.setItem('cartList2',JSON.stringify(cartList2))
-        showCart()
-    }
-
-    //删除
-    if(target.innerHTML=='删除'){
-        //获取当前商品id
-        var id3=target.getAttribute('data-id')
-        //过滤
-        cartList2=cartList2.filter(item=>{
-            return item.id!=id3
-        })
-        localStorage.setItem('cartList2',JSON.stringify(cartList2))
-        showCart()
-    }
-    //全选
-    if(target.name=='quanxuan'){
-        //遍历所有商品
-        cartList2.forEach(item=>{
-            //判断当前全选框是否被选中
-            if(target.checked){
-                item.is_select=1
-            }else{
-                item.is_select=0
-            }
-        })
-        localStorage.setItem('cartList2',JSON.stringify(cartList2))
-        showCart()
-    }
-
-    //选中框
-
-    if(target.name=='xuan'){
-        //获取当前商品的id
-        var id4=target.getAttribute('data-id')
-        //遍历数组
-        cartList2.forEach(item=>{
-            //判断是否为当前操作的商品
-            if(item.id==id4){
-                item.is_select=item.is_select==1?0:1
-                //判断商品是否被选中
-                if(item.is_select==1){
-                    item.is_select==0
-                }else{
-                    item.is_select==1
+    div1.onclick=function(e){
+        var e = e || window.event
+        var target=e.target || e.srcElement
+        //加法
+        if(target.innerHTML=='+'){
+            
+            //获取当亲对象中data-id
+            var id1=target.getAttribute('data-id')
+            var val=parseInt(target.previousElementSibling.value)
+            console.log(val);
+            
+            //遍历数组
+            cartList2.forEach(item=>{
+                if(item.id==id1){
+                    item.number=item.number-0+1
                 }
-            }
-        })
-        localStorage.setItem('cartList2',JSON.stringify(cartList2))
-        showCart()
-    }
-
-    //总算
-    if(target.innerHTML=='结算'){
-        //获取需要支付的总金额
-        var totalprice=total1()[1]
-        //使用确认款，
-        if(confirm("你将要吃土")){
-            alert("你已支付："+totalprice)
-            //删除已购买的商品
-            cartList2=cartList2.filter(item=>{
-                return item.is_select!=1
             })
+            localStorage.setItem('cartList2',JSON.stringify(cartList2))
+            showCart()
         }
-        localStorage.setItem('cartList2',JSON.stringify(cartList2))
-        showCart()
-    }
-    //判断是否为清空购物车按钮
-    if(target.innerHTML=="清空购物车"){
-        // localStorage.clear()
-        localStorage.removeItem('cartList2')
-        showCart()
+        //减法
+        if(target.innerHTML=='-'){
+            //获取当亲对象中data-id
+            var id2=target.getAttribute('data-id')
+            var val=parseInt(target.nextElementSibling.value)
+
+            //遍历当前数组
+            cartList2.forEach(item=>{
+                if(item.id==id2 && val>1){
+                    item.number=item.number-1
+                    if(item.number <= 0){
+                        item.number=0
+                        alert("不能再减啦")
+                    }
+                }
+            })
+            localStorage.setItem('cartList2',JSON.stringify(cartList2))
+            showCart()
+        }
+
+        //删除
+        if(target.innerHTML=='删除'){
+            //获取当前商品id
+            var id3=target.getAttribute('data-id')
+            //过滤
+            cartList2=cartList2.filter(item=>{
+                return item.id!=id3
+            })
+            localStorage.setItem('cartList2',JSON.stringify(cartList2))
+            showCart()
+        }
+        //全选
+        if(target.name=='quanxuan'){
+            //遍历所有商品
+            cartList2.forEach(item=>{
+                //判断当前全选框是否被选中
+                if(target.checked){
+                    item.is_select=1
+                }else{
+                    item.is_select=0
+                }
+            })
+            localStorage.setItem('cartList2',JSON.stringify(cartList2))
+            showCart()
+        }
+
+        //选中框
+
+        if(target.name=='xuan'){
+            //获取当前商品的id
+            var id4=target.getAttribute('data-id')
+            //遍历数组
+            cartList2.forEach(item=>{
+                //判断是否为当前操作的商品
+                if(item.id==id4){
+                    item.is_select=item.is_select==1?0:1
+                    //判断商品是否被选中
+                    if(item.is_select==1){
+                        item.is_select==0
+                    }else{
+                        item.is_select==1
+                    }
+                }
+            })
+            localStorage.setItem('cartList2',JSON.stringify(cartList2))
+            showCart()
+        }
+
+        //总算
+        if(target.innerHTML=='结算'){
+            //获取需要支付的总金额
+            var totalprice=total1()[1]
+            //使用确认款，
+            if(confirm("你将要吃土")){
+                alert("你已支付："+totalprice)
+                //删除已购买的商品
+                cartList2=cartList2.filter(item=>{
+                    return item.is_select!=1
+                })
+            }
+            localStorage.setItem('cartList2',JSON.stringify(cartList2))
+            showCart()
+        }
+        //判断是否为清空购物车按钮
+        if(target.innerHTML=="清空购物车"){
+            // localStorage.clear()
+            localStorage.removeItem('cartList2')
+            showCart()
+        }
     }
 }
-
 //总计方法
 
 function total1(){

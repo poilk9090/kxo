@@ -104,7 +104,7 @@ input,fieldset{
     height: 205px; */
     display: none;
 }
-.denglubox .f1 input[name=urse]{
+.denglubox .f1 input[name=user]{
     border-radius: 25px;
     width: 400px;
     height: 45px;
@@ -168,6 +168,19 @@ input,fieldset{
     letter-spacing: 30px;
     text-indent: 30px
 }
+/* .denglubox #fn2 input[type=submit]{
+    width: 400px;
+    height: 45px;
+    border: #e6e6e6 1px solid;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 25px;
+    background: #575757;
+    border: none;
+    margin-top: 17px;
+    letter-spacing: 30px;
+    text-indent: 30px
+} */
 .denglubox .f1 .T1,.denglubox .f2 .T1{
     font-size: 12px;
     float: left;

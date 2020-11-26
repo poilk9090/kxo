@@ -81,23 +81,26 @@ $('#fn2').validate({
 var frm = document.querySelector('form')
 frm.onsubmit=function(){
     //获取表单输入框的内容
-    var u1=document.querySelector("[name='urse']").value
-    var p1=document.querySelector("[name='pass']").value
+    var user=document.querySelector("[name='user']").value
+    var pass=document.querySelector("[name='pass']").value
     // 设置保存时间差
     var d = new Date()
     //调用ajax对象
     ajax({
-        url:'../php/urse.php',
-        data:`urse=${u1}&pass=${p1}`,
+        url:'../php/denglu.php',
+        type:'POST',
+        data:`name=${user}&pass=${pass}`,
         success:function(dt1){
             
             //判断登录是否成功
-            if(dt1==1){
+            if(dt1===1){
                 //保存登录账号
-                setCookie('login',u1,1800)
+                
+                setCookie('login',user,1800)
+                
                 //获取地址栏中的参数
                 var search1=location.search
-                // console.log(search1);
+                console.log(search1);
                 //判断该参数是否存在
                 if(search1){
                     

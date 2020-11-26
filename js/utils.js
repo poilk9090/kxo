@@ -179,7 +179,7 @@ function ajax(options){
           options.success(xhr.responseText)
         }
       } else {
-        // console.log(xhr.status)
+        console.log(xhr.status)
         options.error(xhr.status)
       }
     }

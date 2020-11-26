@@ -40,8 +40,6 @@ var mySwiper = new Swiper ('.swiper-container', {
     }
   }
 
-  var list1 = document.querySelector('#list-one a')
-  console.log(list1);
 
 
 
@@ -78,7 +76,6 @@ function show1(){
           
           //获取需要分页的对象
           var pagination=document.querySelector('.pagination')
-          console.log(pagination)
           new Pagination(pagination,{
               pageInfo:obj,
               textInfo:{

@@ -21,7 +21,7 @@ if(!$u || !$p || !$type){
         //设置编码
         mysqli_set_charset($link,'utf8');
         // 查询语句
-        $login_sql="select * from urse where urse='$u' and pass='$p'";
+        $login_sql="select * from urse where name='$u' and pass='$p'";
         // 执行语句
         $login_res = mysqli_query($link,$login_sql);
         $login_arr = mysqli_fetch_row($login_res,1);
@@ -35,14 +35,14 @@ if(!$u || !$p || !$type){
 //  注册
 if($type === 'add'){
     // 先查询注册账号是否存在
-    $query_sql = "select * form urse where urse='$u'";
+    $query_sql = "select * form urse where name='$u'";
     $query_res = mysqli_query($link,$query_sql);
     $query_arr = mysqli_fetch_all($query_res,1);
     if(count($query_arr) > 0){
         echo '{"err":-4,"msg":"账号已被占用"}';
     }else{
         // 新创建的账号，添加数据
-        $insert_sql ="insert into urse(urse,pass) values('$u','$p')";
+        $insert_sql ="insert into urse(name,pass) values('$u','$p')";
         mysqli_query($link,$insert_sql);
         // 放回受影响的条数
         $num = mysqli_affected_rows($link);
