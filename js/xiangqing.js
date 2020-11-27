@@ -84,6 +84,25 @@ window.onload=function(){
         zhezhao.style.display='none'
         rightbox.style.display='none'
     }
+
+
+    // 收藏
+    var xingbox = document.querySelector('.star')
+    var xx1 = "★"
+    var xx2 = "☆"
+    var xing = xingbox.children[0].children[0].children[0]
+    xing.onclick = function(){
+        if(xing.innerHTML == '☆'){
+            xing.innerHTML = xx1
+            alert('收藏成功')
+        }else{
+            xing.innerHTML = xx2
+            alert('已取消收藏')
+        }
+    }
+
+
+
 }
 
 
@@ -165,45 +184,10 @@ if(ids){
         }
     })
 }else{
-    alert('未知商品，请从正规渠道进去')
-    location.href='../../liebiaoye/html/liebiao.html'
+        alert('未知商品，请从正规渠道进去')
+        location.href='../../liebiaoye/html/liebiao.html'
 }
 
-window.onload = function(){
-    // 收藏
-    var xingbox = document.querySelector('.star')
-    var xx1 = "★"
-    var xx2 = "☆"
-    var xing = xingbox.children[0].children[0].children[0]
-    xing.onclick = function(){
-        if(xing.innerHTML == '☆'){
-            xing.innerHTML = xx1
-            alert('收藏成功')
-        }else{
-            xing.innerHTML = xx2
-            alert('已取消收藏')
-        }
-    }
-
-    var butt = document.querySelector('.button1')
-    var btnsp = butt.children[0]
-    var btnval = butt.children[1].value
-    console.log(btnval);
-    // 给父元素添加事件监听
-    butt.onclick = function(e){
-        var e = e || window.event
-        if(btnsp.innerHTML == '-'){
-            btnval-1
-            // btnval-1
-            if(btnval.value == '0'){
-                console.log(111);
-            }
-        }
-
-    }
-
-
-}
 
 
 // 给父节点绑定点击事件

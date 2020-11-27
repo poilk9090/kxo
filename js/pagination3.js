@@ -9,8 +9,8 @@ function Pagination(ele,options){
         pageInfo:{
             pagenum:1, //当前显示页
             pagesize:10,//每页显示多少条
-            totalsize:6, //总条数
-            totalpage:6 //总页数
+            totalsize:3, //总条数
+            totalpage:3 //总页数
         },
         textInfo:{
             first:'first',

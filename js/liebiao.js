@@ -71,7 +71,7 @@ function show1(){
             pagenum:1,
             pagesize:8,
             totalsize:dt.length,
-            totalppage:Math.ceil(dt.length/8)
+            totalppage:Math.ceil(dt.length/3)
           }
           
           //获取需要分页的对象
